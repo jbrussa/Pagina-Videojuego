@@ -7,5 +7,8 @@ export const Fondo = styled.div`
   width: 100%;
   height: 100vh /* Hace que el contenedor cubra toda la altura de la pantalla */;
   position: relative; /* Permite agregar contenido encima de la imagen */
-  margin-top: -9vh;
+  margin-top: -12vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 `;

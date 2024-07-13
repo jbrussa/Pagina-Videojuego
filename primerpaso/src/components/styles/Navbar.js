@@ -6,14 +6,14 @@ export const Logo = styled.div`
   background-size: contain; /* Hace que la imagen cubra todo el contenedor */
   background-position: center /* Centra la imagen */;
   width: 10vw;
-  height: 10vh /* Hace que el contenedor cubra toda la altura de la pantalla */;
+  height: 10vh;
   position: relative; /* Permite agregar contenido encima de la imagen */
   background-repeat: no-repeat;
 `;
 
 export const ContenedorLogo = styled.div`
   width: 10vw;
-  height: 9vh /* Hace que el contenedor cubra toda la altura de la pantalla */;
+  height: 9vh ;
   margin-right: 1rem;
   display: flex;
   align-items: center;
