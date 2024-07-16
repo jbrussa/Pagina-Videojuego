@@ -20,6 +20,7 @@ export const ContenedorLogo = styled.div`
   justify-content: center;
 `;
 
+
 /* Objetos que se agregan a MUI */
 
 export const EstiloNavbar = {
@@ -28,3 +29,19 @@ export const EstiloNavbar = {
   top: "0",
   zIndex: "100",
 };
+
+export const BotonDescargar ={
+  width: "15vw",
+  height: "11.3vh",
+  backgroundColor: "rgb(255,207,13)",
+  marginRight: "-1.5rem",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}
+
+export const TextoDescargar = {
+  color: "#242424",
+  letterSpacing: "0.1rem",
+  fontSize: "1.3rem",
+}

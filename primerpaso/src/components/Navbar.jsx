@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import { Logo, ContenedorLogo, EstiloNavbar } from "./styles/Navbar.js";
+import { Logo, ContenedorLogo, EstiloNavbar, BotonDescargar, TextoDescargar } from "./styles/Navbar.js";
 
 const pages = ["Inicio", "Noticias", "Personajes", "Canjear código"];
 
@@ -80,6 +80,11 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+
+          <Box sx={BotonDescargar}>
+            <Typography sx={TextoDescargar}>Descargar</Typography>
+          </Box>
+
         </Toolbar>
       </Container>
     </AppBar>

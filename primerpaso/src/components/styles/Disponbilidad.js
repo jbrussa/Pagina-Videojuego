@@ -18,8 +18,10 @@ export const ContenedorTitulo = styled.div`
   width: 60vw;
   font-family: sans-serif;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1rem;
+  text-shadow: 2px 2px 5px rgba(235, 201, 52, 0.8); /* Sombra del texto */
+  text-align: center;
 `;
 
 export const ContenedorEntradas = styled.div`
@@ -43,14 +45,20 @@ export const Entrada = styled.div`
  align-items: center;
  justify-content: center;
  border-radius: 0.4rem;
- border-color: grey;
-
+ border: ${({vacio}) => vacio ? '' : '0.1em solid grey' };
 `;
+
+export const Foto = styled.img`
+  width: 100%;
+  height: auto;
+`;
+
+
 
 /* Objetos */
 
-export const Foto = {
+/* export const Foto = {
     backgroundSize: "contain", /* Hace que la imagen cubra todo el contenedor */
-    padding: "0.5rem"
+  //  padding: "0.5rem"
     
-  };
+ // }; */
