@@ -1,7 +1,7 @@
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import styled from "@emotion/styled";
-import { Box } from '@mui/material';
+import { Box } from "@mui/material";
 
 export const CarouselContainer = styled(Box)`
   width: 40vw;
@@ -16,17 +16,18 @@ export const ImageContainer = styled(Box)`
   align-items: center;
   height: 50vh; /* Altura fija para el contenedor */
   overflow: hidden;
+  background-size: contain;
   img {
-    width: 100%;
+    width: auto;
     height: auto;
-    max-height: 100%
+    max-height: 100%;
+    min-width: 100%;
   }
 `;
 
-
 /* Objetos */
 
- export const Settings = {
+export const Settings = {
   dots: true,
   infinite: true,
   speed: 500,
@@ -34,9 +35,5 @@ export const ImageContainer = styled(Box)`
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true, // Habilitar autoplay
-  autoplaySpeed: 10000 // Velocidad de autoplay en milisegundos (10 segundos)
-  };
-
-
-
- 
+  autoplaySpeed: 10000, // Velocidad de autoplay en milisegundos (10 segundos)
+};
