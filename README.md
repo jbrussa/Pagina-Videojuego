@@ -1,9 +1,9 @@
 # Pagina-Videojuego
 
-Este proyecto es una pagina web inspirada en el sitio de presentacion y descarga de un videjuego.
-Link a pagina original: https://genshin.hoyoverse.com/es/home
+Este proyecto es una página web inspirada en el sitio de presentación y descarga de un videjuego.
+Link a página original: https://genshin.hoyoverse.com/es/home
 
-Por ahora se estan implementando componentes de diseño exclusivamente de frontend, y proximamente ire implementando backend.
+Por ahora se están implementando componentes de diseño exclusivamente de frontend, y próximamente iré implementando backend.
 
 
 # FRONTEND
