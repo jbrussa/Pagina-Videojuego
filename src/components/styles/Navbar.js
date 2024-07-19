@@ -1,5 +1,8 @@
 import styled from "@emotion/styled";
 
+// TO DO: poner modo sin espacios a los costados del navbar, asi el boton descargar queda a la derecha,
+// pero ver si queda bien tambien el logo a la izquierda, y sino poner un bloque vacio 
+
 /* Componentes */
 export const Logo = styled.div`
   background-image: url("/img/logoGenshin.png");

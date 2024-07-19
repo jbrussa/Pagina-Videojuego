@@ -32,8 +32,12 @@ export const ContenedorNoticias = styled(Box)`
 
 export const ContenedorTexto = styled(Box)`
   width: 40vw;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.6);
   height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 export const ContenedorTitulo = styled.div`
@@ -59,3 +63,29 @@ export const TextoTitulo = styled.h1`
   text-align: center;
   color: white;
 `;
+
+export const TextoNoticias = styled.p`
+  font-size: 1.2rem;
+  color: white;
+`;
+
+export const Noticia = styled(Box)`
+width: 99%;
+height: 7vh;
+border-radius: 0.6rem;
+margin: 0.4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+&:hover{
+  background-color: rgb(161, 161, 161, 0.2)
+}
+`;
+
+/* Objeto */
+
+export const DividerStyle = {
+  width: '95%',
+  backgroundColor: 'rgb(161, 161, 161, 0.5)',
+};
