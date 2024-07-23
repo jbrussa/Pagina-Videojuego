@@ -12,8 +12,7 @@ import {
   Noticia,
 } from "./styles/Section2.js";
 import { Carrusel } from "./Carrusel.jsx";
-import Divider from '@mui/material/Divider';
-
+import Divider from "@mui/material/Divider";
 
 export const Section2 = () => {
   return (
@@ -29,34 +28,29 @@ export const Section2 = () => {
           <ContenedorNoticias>
             <Carrusel></Carrusel>
             <ContenedorTexto>
-              
               <Noticia>
-                <TextoNoticias> aaaaaaa</TextoNoticias>
-              </Noticia>
-              <Divider sx={DividerStyle}></Divider>
-              
-              <Noticia>
-                <TextoNoticias> aaaaaaa</TextoNoticias>
+                <TextoNoticias>Noticia 1</TextoNoticias>
               </Noticia>
               <Divider sx={DividerStyle}></Divider>
 
               <Noticia>
-                <TextoNoticias> aaaaaaa</TextoNoticias>
+                <TextoNoticias>Noticia 2</TextoNoticias>
               </Noticia>
               <Divider sx={DividerStyle}></Divider>
 
               <Noticia>
-                <TextoNoticias> aaaaaaa</TextoNoticias>
+                <TextoNoticias>Noticia 3</TextoNoticias>
               </Noticia>
               <Divider sx={DividerStyle}></Divider>
 
               <Noticia>
-                <TextoNoticias> aaaaaaa</TextoNoticias>
+                <TextoNoticias>Noticia 4</TextoNoticias>
               </Noticia>
+              <Divider sx={DividerStyle}></Divider>
 
-              
-
-
+              <Noticia>
+                <TextoNoticias>Noticia 5</TextoNoticias>
+              </Noticia>
             </ContenedorTexto>
           </ContenedorNoticias>
         </Filtro>

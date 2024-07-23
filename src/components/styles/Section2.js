@@ -2,11 +2,11 @@ import styled from "@emotion/styled";
 import { Box } from "@mui/material";
 
 export const Fondo = styled.div`
-  background-image: url("/img/Noticias.avif");
+  background-image: url("/img/section2.jpg");
   background-size: cover /* Hace que la imagen cubra todo el contenedor */;
   background-position: center /* Centra la imagen */;
   width: 100%;
-  height: 120vh /* Hace que el contenedor cubra toda la altura de la pantalla */;
+  height: 100vh /* Hace que el contenedor cubra toda la altura de la pantalla */;
   position: relative; /* Permite agregar contenido encima de la imagen */
 `;
 
@@ -59,9 +59,10 @@ export const Line = styled.div`
 export const TextoTitulo = styled.h1`
   margin: 0;
   padding: 0 1rem;
-  font-size: 2rem;
+  font-size: 3.5rem;
   text-align: center;
   color: white;
+  font-weight: 400;
 `;
 
 export const TextoNoticias = styled.p`
@@ -70,22 +71,22 @@ export const TextoNoticias = styled.p`
 `;
 
 export const Noticia = styled(Box)`
-width: 99%;
-height: 7vh;
-border-radius: 0.6rem;
-margin: 0.4rem;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-&:hover{
-  background-color: rgb(161, 161, 161, 0.2)
-}
+  width: 99%;
+  height: 7vh;
+  border-radius: 0.6rem;
+  margin: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &:hover {
+    background-color: rgb(161, 161, 161, 0.2);
+  }
 `;
 
 /* Objeto */
 
 export const DividerStyle = {
-  width: '95%',
-  backgroundColor: 'rgb(161, 161, 161, 0.5)',
+  width: "95%",
+  backgroundColor: "rgb(161, 161, 161, 0.5)",
 };

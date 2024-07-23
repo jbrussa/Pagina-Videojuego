@@ -28,24 +28,23 @@ export const ContenedorEntradas = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 20vh;
+  height: 15vh;
   width: 40vw;
   flex-wrap: wrap-reverse;
   margin-bottom: 1.5rem;
   margin-top: -1.5rem;
 `;
 
-
 export const Entrada = styled.div`
- background-color: ${({vacio}) => vacio ? '' : 'black' };
- height: 8vh;
- width: 11vw;
- overflow: hidden;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 0.4rem;
- border: ${({vacio}) => vacio ? '' : '0.1em solid grey' };
+  background-color: ${({ vacio }) => (vacio ? "" : "black")};
+  height: 6vh;
+  width: 11vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  border: ${({ vacio }) => (vacio ? "" : "0.1em solid grey")};
 `;
 
 export const Foto = styled.img`
@@ -53,12 +52,10 @@ export const Foto = styled.img`
   height: auto;
 `;
 
-
-
 /* Objetos */
 
 /* export const Foto = {
     backgroundSize: "contain", /* Hace que la imagen cubra todo el contenedor */
-  //  padding: "0.5rem"
-    
- // }; */
+//  padding: "0.5rem"
+
+// }; */
