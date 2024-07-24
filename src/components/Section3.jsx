@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Zona,
-  Estrellas,
   TextoTitulo,
   Filtro,
   Personaje,
