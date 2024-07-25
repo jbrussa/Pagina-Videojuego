@@ -71,7 +71,7 @@ export const TextoNoticias = styled.p`
 `;
 
 export const Noticia = styled(Box)`
-  width: 99%;
+  width: 95%;
   height: 7vh;
   border-radius: 0.6rem;
   margin: 0.4rem;

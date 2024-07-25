@@ -3,7 +3,13 @@ import {
   ContainerFooter,
   Contacto,
   DividerStyle,
-  IconsStyle,
+  IconStyle,
+  ContainerSuscripcion,
+  ContainerTextoSuscripcion,
+  ContainerInputSuscripcion,
+  TextoSuscripcion,
+  TituloSuscripcion,
+  InputStyle,
 } from "./styles/Footer.js";
 import Divider from "@mui/material/Divider";
 import { IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
@@ -16,6 +22,7 @@ import {
   FaFacebookMessenger,
 } from "react-icons/fa";
 import { PiDiscordLogoFill } from "react-icons/pi";
+import TextField from "@mui/material/TextField";
 
 export const Footer = () => {
   return (
@@ -28,7 +35,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <IoLogoTwitter style={IconsStyle} />
+            <IconStyle>
+              <IoLogoTwitter />
+            </IconStyle>
           </a>
 
           {/* TikTok */}
@@ -37,7 +46,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <IoLogoTiktok style={IconsStyle} />
+            <IconStyle>
+              <IoLogoTiktok />
+            </IconStyle>
           </a>
 
           {/* Youtube */}
@@ -46,7 +57,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <IoLogoYoutube style={IconsStyle} />
+            <IconStyle>
+              <IoLogoYoutube />
+            </IconStyle>
           </a>
 
           {/* Facebook */}
@@ -55,7 +68,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaFacebookF style={IconsStyle} />
+            <IconStyle>
+              <FaFacebookF />
+            </IconStyle>
           </a>
 
           {/* Instagram */}
@@ -64,7 +79,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <IoLogoInstagram style={IconsStyle} />
+            <IconStyle>
+              <IoLogoInstagram />
+            </IconStyle>
           </a>
 
           {/* HoyoLab */}
@@ -73,7 +90,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <PiDiscordLogoFill style={IconsStyle} />
+            <IconStyle>
+              <PiDiscordLogoFill />
+            </IconStyle>
           </a>
 
           {/* Discord */}
@@ -82,7 +101,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaDiscord style={IconsStyle} />
+            <IconStyle>
+              <FaDiscord />
+            </IconStyle>
           </a>
 
           {/* Reddit */}
@@ -91,7 +112,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaRedditAlien style={IconsStyle} />
+            <IconStyle>
+              <FaRedditAlien />
+            </IconStyle>
           </a>
 
           {/* Twitch */}
@@ -100,7 +123,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaTwitch style={IconsStyle} />
+            <IconStyle>
+              <FaTwitch />
+            </IconStyle>
           </a>
 
           {/* Messenger */}
@@ -109,7 +134,9 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaFacebookMessenger style={IconsStyle} />
+            <IconStyle>
+              <FaFacebookMessenger />
+            </IconStyle>
           </a>
 
           {/* WhatsApp */}
@@ -118,10 +145,33 @@ export const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <IoLogoWhatsapp style={IconsStyle} />
+            <IconStyle>
+              <IoLogoWhatsapp />
+            </IconStyle>
           </a>
         </Contacto>
         <Divider sx={DividerStyle}></Divider>
+
+        <ContainerSuscripcion>
+          <ContainerTextoSuscripcion>
+            <TituloSuscripcion>
+              Suscríbete a las últimas noticias
+            </TituloSuscripcion>
+            <TextoSuscripcion>
+              Suscríbete a las noticias oficiales de Paimon sobre Genshin Impact
+              y sé de los primeros en recibir las últimas noticias sobre el
+              juego y la información sobre los personajes y las recompensas de
+              los eventos por tiempo limitado.
+            </TextoSuscripcion>
+          </ContainerTextoSuscripcion>
+          <ContainerInputSuscripcion>
+            <TextField
+              id="outlined-helperText"
+              label="Correo electrónico"
+              sx={InputStyle}
+            />
+          </ContainerInputSuscripcion>
+        </ContainerSuscripcion>
       </ContainerFooter>
     </>
   );
