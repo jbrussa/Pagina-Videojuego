@@ -111,7 +111,9 @@ export const Espacio = styled.div`
 height: 35%;
 width: 30%;
 `
-
+// en vez de un coso de espacio, podes hacerotro contedor
+// igual al que tiene el input,  pnerle el mismo margin y todo
+// para que quede igual con el de arriba siempre
 /* Objeto */
 
 export const DividerStyle = {
