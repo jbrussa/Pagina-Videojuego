@@ -50,6 +50,7 @@ export const Zona = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 0;
+  overflow: hidden;
   transition: transform 0.5s ease;
   & :hover {
     animation: ${fadeIn} 300ms forwards;
@@ -81,7 +82,7 @@ export const TextoTitulo = styled.h1`
   text-align: center;
   color: white;
   font-weight: 400;
-  z-index: 3;
+  z-index: 5;
   position: absolute;
   font-family: Tahoma, Helvetica, Arial, sans-serif;
 `;
@@ -118,7 +119,7 @@ export const Linea = styled.div`
     #fbfdfe 45% 55%,
     transparent
   );
-  z-index: 4;
+  z-index: 5;
   opacity: 0;
   overflow: hidden;
   ${({ isVisible }) =>

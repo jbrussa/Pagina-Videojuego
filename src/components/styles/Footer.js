@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 
 export const ContainerFooter = styled.div`
-  height: 30vh;
+  height: 40vh;
   width: 99vw;
   background-color: #111111;
   z-index: 0;
@@ -18,10 +17,11 @@ export const Contacto = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem;
 `;
 
 export const ContainerSuscripcion = styled.div`
-  height: 22vh;
+  height: 30vh;
   width: 99vw;
   display: flex;
   align-items: center;
@@ -43,12 +43,14 @@ export const ContainerInputSuscripcion = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  
 `;
 
 export const TextoSuscripcion = styled.div`
   height: 10vh;
   width: 60%;
+  margin: 0.5rem;
   margin-left: 2rem;
   font-family: Tahoma, Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
@@ -76,11 +78,39 @@ export const IconStyle = styled.div`
   font-size: 1.7rem;
   margin: 0 2.7rem;
   transition: color 0.2s;
-
   &:hover {
     color: #ffffff;
   }
 `;
+
+export const BotonSuscribir = styled.div`
+width: 25%;
+height: 35%;
+background-color: #cdbb97;
+border-radius: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0.5rem;
+`
+export const ContainerTerminosYCondiciones = styled.div`
+height: 35%;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+`
+export const TextoTerminosYCondiciones = styled.div`
+font-family: Tahoma, Helvetica, Arial, sans-serif;
+font-size: 0.7rem;
+color: rgb(204, 208, 210);
+width: 80%;
+`
+export const Espacio = styled.div`
+height: 35%;
+width: 30%;
+`
 
 /* Objeto */
 
@@ -92,20 +122,34 @@ export const DividerStyle = {
 
 export const InputStyle = {
   width: "40%",
-  borderRadius: "5rem",
-  color: "rgb(187, 155, 108)",
-  "& label.Mui-focused": {
-    color: "#bb9b6c", // Color del label cuando está enfocado
-  },
-  "& .MuiOutlinedInput-root": {
-    "& fieldset": {
-      borderColor: "#323339", // Color del borde cuando no está enfocado
+  margin: "0.5rem",
+  '& .MuiOutlinedInput-root': {
+    borderRadius: '1rem',
+    '& fieldset': {
+      borderColor: '#323339', // color del borde
+      backgroundColor: '#212226', // fondo del input
+    },
+    '&:hover fieldset': {
+      borderColor: '#323339', // color del borde al pasar el mouse
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#bb9b6c', // color del borde cuando está enfocado
     },
   },
-  "&:hover fieldset": {
-    borderColor: "#323339", // Color del borde al pasar el mouse
+  '& .MuiInputLabel-root': {
+    color: '#a0a5a9', // color del label cuando no está enfocado
+    fontWeight: "100",
   },
-  "&.Mui-focused fieldset": {
-    borderColor: "#bb9b6c", // Color del borde cuando está enfocado
+  '& .MuiInputLabel-root.Mui-focused': {
+    color: '#bb9b6c', // color del label cuando está enfocado
   },
 };
+
+export const CheckBoxStyle = {
+  borderRadius: "3",
+  color: "#505154",
+  alignSelf: "start",
+  '&.Mui-checked': {
+      color: '#bb9b6c',
+    },
+} 

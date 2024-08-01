@@ -10,6 +10,11 @@ import {
   TextoSuscripcion,
   TituloSuscripcion,
   InputStyle,
+  BotonSuscribir,
+  ContainerTerminosYCondiciones,
+  TextoTerminosYCondiciones,
+  CheckBoxStyle,
+  Espacio
 } from "./styles/Footer.js";
 import Divider from "@mui/material/Divider";
 import { IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
@@ -23,6 +28,8 @@ import {
 } from "react-icons/fa";
 import { PiDiscordLogoFill } from "react-icons/pi";
 import TextField from "@mui/material/TextField";
+import Checkbox from '@mui/material/Checkbox';
+
 
 export const Footer = () => {
   return (
@@ -170,6 +177,14 @@ export const Footer = () => {
               label="Correo electrónico"
               sx={InputStyle}
             />
+            <BotonSuscribir>Suscribirse</BotonSuscribir>
+            <ContainerTerminosYCondiciones>
+            <Checkbox size="small" sx={CheckBoxStyle}></Checkbox>
+            <TextoTerminosYCondiciones>
+            Acepto la recopilación y el uso de datos personales para recibir invitaciones a eventos y otra información sobre el juego. Leer los detalles 
+            </TextoTerminosYCondiciones>
+            </ContainerTerminosYCondiciones>
+            <Espacio></Espacio>
           </ContainerInputSuscripcion>
         </ContainerSuscripcion>
       </ContainerFooter>

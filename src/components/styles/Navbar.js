@@ -22,6 +22,8 @@ export const ContenedorLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
+  justify-self: center;
 `;
 
 export const BotonDescargar = styled.div`

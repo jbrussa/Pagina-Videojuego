@@ -24,10 +24,13 @@ function ResponsiveAppBar() {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
+    // el menu esta anclado al elemento del DOM al que se le esta llamando el evento
+    // que seria el icono de menu
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+    //el menu no se ancla a nada, para que se cierre
   };
 
   return (
