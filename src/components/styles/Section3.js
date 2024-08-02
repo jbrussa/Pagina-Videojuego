@@ -34,8 +34,8 @@ export const Imagen = styled.img`
 `;
 
 export const ContenedorZona = styled.div`
-  height: 28vh;
-  width: 99vw;
+  height: 38vh;
+  width: 100%;
   overflow: hidden;
   & :hover img {
     transform: scale(1.1);
@@ -90,7 +90,7 @@ export const TextoTitulo = styled.h1`
 export const Personaje = styled.div`
   width: 100%;
   height: 100%;
-  background-position: right;
+  background-position: 130% center;
   z-index: 4;
   background-repeat: no-repeat;
   background-image: url(${({ bgImg }) => bgImg});

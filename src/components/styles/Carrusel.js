@@ -35,5 +35,5 @@ export const Settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true, // Habilitar autoplay
-  autoplaySpeed: 8000, // Velocidad de autoplay en milisegundos (10 segundos)
+  autoplaySpeed: 5000, // Velocidad de autoplay en milisegundos (5 segundos)
 };

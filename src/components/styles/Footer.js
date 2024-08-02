@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const ContainerFooter = styled.div`
   height: 40vh;
-  width: 99vw;
+  width: 100%;
   background-color: #111111;
   z-index: 0;
   display: flex;
@@ -12,7 +12,7 @@ export const ContainerFooter = styled.div`
 
 export const Contacto = styled.div`
   height: 6vh;
-  width: 99vw;
+  width: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ export const Contacto = styled.div`
 
 export const ContainerSuscripcion = styled.div`
   height: 30vh;
-  width: 99vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@ export const ContainerSuscripcion = styled.div`
 
 export const ContainerTextoSuscripcion = styled.div`
   height: 90%;
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -39,13 +39,20 @@ export const ContainerTextoSuscripcion = styled.div`
 
 export const ContainerInputSuscripcion = styled.div`
   height: 90%;
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  
+  flex-direction: column;
 `;
+
+export const Container2InputSuscripcion = styled.div`
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`
 
 export const TextoSuscripcion = styled.div`
   height: 10vh;
@@ -85,7 +92,7 @@ export const IconStyle = styled.div`
 
 export const BotonSuscribir = styled.div`
 width: 25%;
-height: 35%;
+height: 70%;
 background-color: #cdbb97;
 border-radius: 1rem;
 display: flex;
@@ -95,7 +102,7 @@ margin: 0.5rem;
 `
 export const ContainerTerminosYCondiciones = styled.div`
 height: 35%;
-width: 50%;
+width: 60%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -105,15 +112,32 @@ export const TextoTerminosYCondiciones = styled.div`
 font-family: Tahoma, Helvetica, Arial, sans-serif;
 font-size: 0.7rem;
 color: rgb(204, 208, 210);
-width: 80%;
+width: 85%;
 `
-export const Espacio = styled.div`
-height: 35%;
-width: 30%;
+export const Marca = styled.div`
+width: 100%;
+height: 70%;
+background-color: #000000;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 2rem;
+box-sizing: border-box;
 `
-// en vez de un coso de espacio, podes hacerotro contedor
-// igual al que tiene el input,  pnerle el mismo margin y todo
-// para que quede igual con el de arriba siempre
+export const Image = styled.img`
+  width: 25%;
+  height: auto;
+  margin: 0.5rem;
+
+`
+export const TextoCopyright = styled.div`
+font-family: Tahoma, Helvetica, Arial, sans-serif;
+font-size: 0.7rem;
+color: rgb(204, 208, 210);
+margin: 0.5rem;
+`
+
 /* Objeto */
 
 export const DividerStyle = {
@@ -123,8 +147,8 @@ export const DividerStyle = {
 };
 
 export const InputStyle = {
-  width: "40%",
-  margin: "0.5rem",
+  width: "55%",
+  margin: "1rem",
   '& .MuiOutlinedInput-root': {
     borderRadius: '1rem',
     '& fieldset': {

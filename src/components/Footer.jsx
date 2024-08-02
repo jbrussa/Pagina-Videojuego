@@ -14,7 +14,10 @@ import {
   ContainerTerminosYCondiciones,
   TextoTerminosYCondiciones,
   CheckBoxStyle,
-  Espacio
+  Container2InputSuscripcion,
+  Marca,
+  Image,
+  TextoCopyright
 } from "./styles/Footer.js";
 import Divider from "@mui/material/Divider";
 import { IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
@@ -172,21 +175,34 @@ export const Footer = () => {
             </TextoSuscripcion>
           </ContainerTextoSuscripcion>
           <ContainerInputSuscripcion>
-            <TextField
+
+            <Container2InputSuscripcion>
+              <TextField
               id="outlined-helperText"
               label="Correo electrónico"
               sx={InputStyle}
             />
             <BotonSuscribir>Suscribirse</BotonSuscribir>
+            </Container2InputSuscripcion>
+            
+            <Container2InputSuscripcion>
             <ContainerTerminosYCondiciones>
             <Checkbox size="small" sx={CheckBoxStyle}></Checkbox>
             <TextoTerminosYCondiciones>
             Acepto la recopilación y el uso de datos personales para recibir invitaciones a eventos y otra información sobre el juego. Leer los detalles 
             </TextoTerminosYCondiciones>
             </ContainerTerminosYCondiciones>
-            <Espacio></Espacio>
+            </Container2InputSuscripcion>
           </ContainerInputSuscripcion>
         </ContainerSuscripcion>
+
+        <Marca>
+          <Image alt='Hoyoverse' src='img/Hoyoverse.png'> 
+          </Image>
+          <TextoCopyright> Copyright © COGNOSPHERE. All Rights Reserved.</TextoCopyright>
+        </Marca>
+
+
       </ContainerFooter>
     </>
   );
