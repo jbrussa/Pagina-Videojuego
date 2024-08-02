@@ -26,15 +26,12 @@ export const ContenedorLogo = styled.div`
   justify-self: center;
 `;
 
-export const BotonDescargar = styled.div`
-  width: 13vw;
-  height: 8vh;
-  background-color: rgb(255, 207, 13);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+export const BotonDescargar = styled.img`
+  height: 100%;
+  width: auto;
   justify-self: flex-end;
-  align-self: flex-start;
+  align-self: flex-end;
+  margin-left: auto;
 `;
 /* Objetos que se agregan a MUI */
 
@@ -43,14 +40,13 @@ export const EstiloNavbar = {
   position: "sticky",
   top: "0",
   zIndex: "100",
-  height: "8vh",
+  height: "9%",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
 };
 
-export const TextoDescargar = {
-  color: "#242424",
-  letterSpacing: "0.1rem",
-  fontSize: "1.3rem",
-};
+export const EstilosToolbar = {
+  display: "flex",
+}
+

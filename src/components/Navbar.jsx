@@ -14,7 +14,7 @@ import {
   ContenedorLogo,
   EstiloNavbar,
   BotonDescargar,
-  TextoDescargar,
+  EstilosToolbar
 } from "./styles/Navbar.js";
 
 const pages = ["Inicio", "Noticias", "Personajes", "Canjear código"];
@@ -36,7 +36,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static" sx={EstiloNavbar}>
       <Container maxWidth="xl" sx={{ justifyContent: "space-between" }}>
-        <Toolbar disableGutters>
+        <Toolbar disableGutters sx={EstilosToolbar}>
           <ContenedorLogo>
             <Logo></Logo>
           </ContenedorLogo>
@@ -90,9 +90,10 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <BotonDescargar>
-            <Typography sx={TextoDescargar}>Descargar</Typography>
+          <BotonDescargar src='/img/botonDescargar.png' alt='Descargar'>
           </BotonDescargar>
+
+
         </Toolbar>
       </Container>
     </AppBar>

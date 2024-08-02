@@ -123,7 +123,7 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 padding: 2rem;
-box-sizing: border-box;
+box-sizing: border-box; //el padding y el borde se incluyen en el cálculo del ancho del elemento
 `
 export const Image = styled.img`
   width: 25%;

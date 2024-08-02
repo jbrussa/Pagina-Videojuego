@@ -12,3 +12,18 @@ export const Fondo = styled.div`
   align-items: flex-end;
   justify-content: center;
 `;
+
+export const Contenedor = styled.div`
+height: 50vh;
+width: 60vw;
+display: flex;
+align-items: center;
+justify-content: center;
+`
+
+export const Image = styled.img`
+  width: 10%;
+  height: auto;
+  margin: 0.5rem;
+
+`
