@@ -36,7 +36,6 @@ export const ContenedorEntradas = styled.div`
 `;
 
 export const Entrada = styled.div`
-  background-color: ${({ vacio }) => (vacio ? "" : "black")};
   height: 6vh;
   width: 11vw;
   overflow: hidden;
@@ -44,7 +43,6 @@ export const Entrada = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 0.4rem;
-  border: ${({ vacio }) => (vacio ? "" : "0.1em solid grey")};
 `;
 
 export const Foto = styled.img`

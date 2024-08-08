@@ -27,11 +27,9 @@ export const ContenedorLogo = styled.div`
 `;
 
 export const BotonDescargar = styled.img`
-  height: 100%;
+  height: 10%;
   width: auto;
   justify-self: flex-end;
-  align-self: flex-end;
-  margin-left: auto;
 `;
 /* Objetos que se agregan a MUI */
 
@@ -48,5 +46,4 @@ export const EstiloNavbar = {
 
 export const EstilosToolbar = {
   display: "flex",
-}
-
+};

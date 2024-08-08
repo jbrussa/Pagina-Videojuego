@@ -14,7 +14,7 @@ import {
   ContenedorLogo,
   EstiloNavbar,
   BotonDescargar,
-  EstilosToolbar
+  EstilosToolbar,
 } from "./styles/Navbar.js";
 
 const pages = ["Inicio", "Noticias", "Personajes", "Canjear código"];
@@ -90,10 +90,10 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <BotonDescargar src='/img/botonDescargar.png' alt='Descargar'>
-          </BotonDescargar>
-
-
+          <BotonDescargar
+            src="/img/botonDescargar.png"
+            alt="Descargar"
+          ></BotonDescargar>
         </Toolbar>
       </Container>
     </AppBar>

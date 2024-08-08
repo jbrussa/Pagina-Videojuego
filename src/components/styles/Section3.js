@@ -34,7 +34,7 @@ export const Imagen = styled.img`
 `;
 
 export const ContenedorZona = styled.div`
-  height: 38vh;
+  height: 30vh;
   width: 100%;
   overflow: hidden;
   & :hover img {
